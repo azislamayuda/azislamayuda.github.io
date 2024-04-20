@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #35e888;
+  color: #4b85b4;
   text-decoration: none;
 }
 
@@ -756,7 +756,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #4b85b4;
 }
 
 .services .icon-box:hover h4 a,
