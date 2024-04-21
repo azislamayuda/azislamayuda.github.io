@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010409 url("../img/bg.webp") top right no-repeat;
+  background: #010409;
   background-size: cover;
   left: 0;
   right: 0;
@@ -30,7 +30,7 @@ body::before {
 
 @media (min-width: 1024px) {
   body::before {
-    background: #010409;
+    background: #010409 url("../img/bg.webp") top right no-repeat;
   }
 }
 
