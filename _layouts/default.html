@@ -1,0 +1,24 @@
+<!doctype html>
+<html data-bs-theme='auto' lang="en">
+  {% include head.html %}
+  <body>
+    {% include svg.html %}
+      <main class='container'>
+        {% include header.html %}
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out!
+    </div>
+    <ol class="list-group list-group-numbered">
+      {% for post in site.posts %}
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold"><a href="{{ post.url }}">{{ post.title }}</a></div>
+              <span class="small">{{ post.date | date: "%b %d, %Y" }}</span>
+            </div>
+            <span class="badge text-bg-primary rounded-pill">{{ page.categories }}</span>
+          </li>
+      {% endfor %}
+    </ol>
+    {% include footer.html %}
+    </body>
+</html>

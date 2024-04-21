@@ -1,0 +1,27 @@
+---
+layout: post
+---
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body class="container">
+    {% include header.html %}
+    {% include svg.html %}
+<article id="post">
+    <header class="post-header mb-3">
+        <h1 class="post-title mb-2">{{ page.title }}</h1>
+        <div class="post-date">
+            <svg class='bi me-2' height='14' width='14'><use href='#kalender'></use></svg><span class="small">{{ page.date | date: "%b %-d, %Y" }}</span>
+        </div>
+    </header>
+    {{ content }}
+</article>
+<div class="badge text-bg-primary">
+    {% for category in page.categories %}
+    <span class="post-category">{{ category }}</span>
+    {% endfor %}
+</div>
+{% include navlinks.html %}
+{% include footer.html %}
+</body>
+</html>
