@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -757,37 +757,36 @@
     </div>
   </section><!-- End Contact Section -->
 
-  <div class="credits">
-    <div class='dropdown bd-mode-toggle'>
-      <button aria-expanded='false' aria-label='Toggle theme (auto)' class='btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center' data-bs-toggle='dropdown' id='bd-theme' type='button'>
-      <svg class='bi my-1 theme-icon-active' height='1em' width='1em'><use href='#circle-half'></use></svg>
-      <span class='visually-hidden' id='bd-theme-text'>Toggle theme</span>
-      </button>
-      <ul aria-labelledby='bd-theme-text' class='dropdown-menu dropdown-menu-end shadow'>
-      <li>
-      <button aria-pressed='false' class='dropdown-item d-flex align-items-center' data-bs-theme-value='light' type='button'>
-      <svg class='bi me-2 opacity-50 theme-icon' height='1em' width='1em'><use href='#sun-fill'></use></svg>
-                  Light
-                  <svg class='bi ms-auto d-none' height='1em' width='1em'><use href='#check2'></use></svg>
-      </button>
-      </li>
-      <li>
-      <button aria-pressed='false' class='dropdown-item d-flex align-items-center' data-bs-theme-value='dark' type='button'>
-      <svg class='bi me-2 opacity-50 theme-icon' height='1em' width='1em'><use href='#moon-stars-fill'></use></svg>
-                  Dark
-                  <svg class='bi ms-auto d-none' height='1em' width='1em'><use href='#check2'></use></svg>
-      </button>
-      </li>
-      <li>
-      <button aria-pressed='true' class='dropdown-item d-flex align-items-center active' data-bs-theme-value='auto' type='button'>
-      <svg class='bi me-2 opacity-50 theme-icon' height='1em' width='1em'><use href='#circle-half'></use></svg>
-                  Auto
-                  <svg class='bi ms-auto d-none' height='1em' width='1em'><use href='#check2'></use></svg>
-      </button>
-      </li>
-      </ul>
-      </div>
-  </div>
+  {% include svg.html %}
+  <div class='dropdown credits bottom-0 end-0 mb-3 me-3 bd-mode-toggle'>
+    <button aria-expanded='false' aria-label='Toggle theme (auto)' class='btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center' data-bs-toggle='dropdown' id='bd-theme' type='button'>
+    <svg class='bi my-1 theme-icon-active' height='1em' width='1em'><use href='#circle-half'></use></svg>
+    <span class='visually-hidden' id='bd-theme-text'>Toggle theme</span>
+    </button>
+    <ul aria-labelledby='bd-theme-text' class='dropdown-menu dropdown-menu-end shadow'>
+    <li>
+    <button aria-pressed='false' class='dropdown-item d-flex align-items-center' data-bs-theme-value='light' type='button'>
+    <svg class='bi me-2 opacity-50 theme-icon' height='1em' width='1em'><use href='#sun-fill'></use></svg>
+                Light
+                <svg class='bi ms-auto d-none' height='1em' width='1em'><use href='#check2'></use></svg>
+    </button>
+    </li>
+    <li>
+    <button aria-pressed='false' class='dropdown-item d-flex align-items-center' data-bs-theme-value='dark' type='button'>
+    <svg class='bi me-2 opacity-50 theme-icon' height='1em' width='1em'><use href='#moon-stars-fill'></use></svg>
+                Dark
+                <svg class='bi ms-auto d-none' height='1em' width='1em'><use href='#check2'></use></svg>
+    </button>
+    </li>
+    <li>
+    <button aria-pressed='true' class='dropdown-item d-flex align-items-center active' data-bs-theme-value='auto' type='button'>
+    <svg class='bi me-2 opacity-50 theme-icon' height='1em' width='1em'><use href='#circle-half'></use></svg>
+                Auto
+                <svg class='bi ms-auto d-none' height='1em' width='1em'><use href='#check2'></use></svg>
+    </button>
+    </li>
+    </ul>
+    </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

@@ -8,24 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+[data-bs-theme="dark"] body{
+  background: #010409;
+}
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #010409;
-  color: #fff;
   position: relative;
-  background: transparent;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  background: #010409;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  z-index: -1;
 }
 
 a {
@@ -75,7 +63,7 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: var(--bs-body-color);
   line-height: 1;
   display: inline-block;
 }
@@ -83,11 +71,11 @@ h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--bs-body-color-rgb);
 }
 
 #header h2 span {
-  color: #fff;
+  color: var(--bs-body-color);
   border-bottom: 2px solid #64ace6;
   padding-bottom: 6px;
 }
@@ -107,8 +95,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -148,7 +136,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--bs-body-bg);
 }
 
 #header.header-top .social-links,
@@ -216,7 +204,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--bs-body-color);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -252,7 +240,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #0890e5;
 }
 
 /**
@@ -287,7 +275,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--bs-body-bg);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -348,7 +336,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--bs-body-bg);
   padding: 30px;
 }
 
@@ -1161,29 +1149,22 @@ section .container {
 --------------------------------------------------------------*/
 .credits {
   position: fixed;
-  right: 0;
-  left: 0;
+  right: 10px;
   bottom: 0;
   padding: 15px;
-  text-align: right;
   font-size: 13px;
-  color: #fff;
   z-index: 999999;
 }
 
 @media (max-width: 992px) {
   .credits {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+            left: 0;
+            margin-right: auto;
+            margin-left: auto;
+            bottom: 20px; /* adjust as needed */
   }
-}
-
-.credits a {
-  color: #64ace6;
-  transition: 0.3s;
-}
-
-.credits a:hover {
-  color: #fff;
 }
