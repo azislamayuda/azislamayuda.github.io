@@ -28,12 +28,6 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
-  body::before {
-    background: #010409 url("../img/bg.webp") top right no-repeat;
-  }
-}
-
 a {
   color: #64ace6;
   text-decoration: none;
