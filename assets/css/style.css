@@ -1193,7 +1193,7 @@ section .container {
 
 .kursor {
   cursor: pointer;
-  text-decoration:none
+  text-decoration:none;
 }
 
 .zisToTop.show {
