@@ -704,7 +704,7 @@ section .container {
   width: 64px;
   height: 64px;
   background: var(--dark-warna-cta);
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
@@ -726,7 +726,7 @@ section .container {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
