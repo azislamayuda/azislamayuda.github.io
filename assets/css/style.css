@@ -227,7 +227,7 @@ h6 {
   transition: 0.5s;
   position: fixed;
   right: 15px;
-  top: 25px;
+  top: 35px;
 }
 
 @media (max-width: 991px) {
