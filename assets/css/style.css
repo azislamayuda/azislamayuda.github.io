@@ -1198,7 +1198,7 @@ section .container {
 
 .zisToTop.show {
   visibility:visible;
-  bottom:80px;
+  bottom:60px;
   opacity:.6;
   background-color:var(--dark-warna-cta);
 }
