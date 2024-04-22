@@ -550,19 +550,19 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# zquotes
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
+.zquotes .zquotes-carousel,
+.zquotes .zquotes-slider {
   overflow: hidden;
 }
 
-.testimonials .testimonial-item {
+.zquotes .zquote-item {
   box-sizing: content-box;
   min-height: 320px;
 }
 
-.testimonials .testimonial-item .testimonial-img {
+.zquotes .zquote-item .zquote-img {
   width: 90px;
   border-radius: 50%;
   margin: -40px 0 0 40px;
@@ -571,60 +571,61 @@ section .container {
   border: 6px solid rgba(255, 255, 255, 0.12);
 }
 
-.testimonials .testimonial-item h3 {
+.zquotes .zquote-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
   color: var(--dark-warna-pertama);
 }
 
-.testimonials .testimonial-item h4 {
+.zquotes .zquote-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0 0 0 45px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.zquotes .zquote-item .quote-icon-left,
+.zquotes .zquote-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
 }
 
-.testimonials .testimonial-item .quote-icon-left {
+.zquotes .zquote-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.testimonials .testimonial-item .quote-icon-right {
+.zquotes .zquote-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
 
-.testimonials .testimonial-item p {
+.zquotes .zquote-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 1;
+  min-height: 50vh;
 }
 
-.testimonials .swiper-pagination {
+.zquotes .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.zquotes .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.zquotes .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--dark-warna-cta);
 }
 

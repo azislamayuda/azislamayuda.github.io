@@ -157,9 +157,9 @@
   }
 
   /**
-   * Testimonials slider
+   * zquotes slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.zquotes-slider', {
     speed: 600,
     loop: true,
     autoplay: {
