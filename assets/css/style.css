@@ -220,14 +220,13 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  font-size: 25px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
   position: fixed;
   right: 15px;
-  top: 35px;
+  top: 15px;
 }
 
 @media (max-width: 991px) {
