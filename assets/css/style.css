@@ -1014,9 +1014,8 @@ section .container {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
-  padding: 20px;
-  width: 100%;
   background: rgba(255, 255, 255, 0.08);
+  width: 100%;
 }
 
 .contact .info-box i {
@@ -1028,19 +1027,15 @@ section .container {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
-  margin: 10px 0 8px 68px;
 }
 
 .contact .info-box p {
-  padding: 0;
   color: var(--dark-warna-pertama);
   line-height: 24px;
   font-size: 14px;
-  margin: 0 0 0 68px;
 }
 
 .contact .info-box .social-links {
-  margin: 5px 0 0 68px;
   display: flex;
 }
 
@@ -1181,7 +1176,7 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--dark-bg);
   }
 }
 
