@@ -13,7 +13,7 @@
   --dark-warna-kedua: #cfd2d6;
   --dark-warna-ketiga: #989898;
   --dark-warna-cta: #0890e5;
-  --dark-warna-cta-hover: #64ace6;
+  --dark-warna-cta-hover: #007fc4;
 }
 /*--------------------------------------------------------------
 # General
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-  color: #35e888;
+  color: var(--dark-warna-cta-hover);
   text-decoration: none;
 }
 
@@ -400,7 +400,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: var(--dark-warna-cta);
   margin: 4px 10px;
 }
 
@@ -459,21 +459,13 @@ section .container {
 .counts .count-box {
   padding: 30px 30px 25px 30px;
   width: 100%;
-  position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
 }
 
 .counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
   color: var(--dark-warna-cta);
-  border-radius: 50px;
   line-height: 0;
 }
 
@@ -771,7 +763,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: var(--dark-warna-cta-hover);
 }
 
 .services .icon-box:hover h4 a,
