@@ -1019,12 +1019,8 @@ section .container {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.contact .info-box i.bx {
-  font-size: 24px;
+.contact .info-box i {
   color: var(--dark-warna-cta);
-  border-radius: 50%;
-  padding: 14px;
-  float: left;
   background: rgba(255, 255, 255, 0.1);
 }
 
