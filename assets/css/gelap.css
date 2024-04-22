@@ -5,30 +5,95 @@
     --dark-warna-pertama: #ffffff;
     --dark-warna-kedua: #cfd2d6;
     --dark-warna-ketiga: #989898;
+    --dark-warna-cta: #0890e5;
+    --dark-warna-cta-hover: #64ace6;
 }
 
 [data-bs-theme="dark"] body,
-[data-bs-theme="dark"] #header.header-top{
-background: var(--dark-bg);
+[data-bs-theme="dark"] #header.header-top,
+[data-bs-theme="dark"] .navbar-mobile {
+    background: var(--dark-bg);
 }
-[data-bs-theme="dark"] #header h1 a{
+
+[data-bs-theme="dark"] #header h1 a,
+[data-bs-theme="dark"] .section-title p,
+[data-bs-theme="dark"] .navbar a,
+[data-bs-theme="dark"] .navbar a:focus,
+[data-bs-theme="dark"] .mobile-nav-toggle {
     color: var(--dark-warna-pertama);
 }
+
 [data-bs-theme="dark"] #header h1 a:hover,
 [data-bs-theme="dark"] #header h2 span{
     color: var(--dark-warna-ketiga);
 }
+
 [data-bs-theme="dark"] #header h2{
     color: var(--dark-warna-kedua);
 }
+
 [data-bs-theme="dark"] #header .social-links a{
     background: var(--dark-bg-aksen);
     color: var(--dark-warna-pertama);
 }
+
 [data-bs-theme="dark"] #header .social-links a:hover{
     background: var(--dark-bg-aksen-hover);
 }
-[data-bs-theme="dark"] .navbar a,
-[data-bs-theme="dark"] .navbar a:focus {
+
+[data-bs-theme="dark"] .navbar a:before,
+[data-bs-theme="dark"] .section-title h2::after {
+    background-color: var(--dark-warna-cta);
+}
+
+[data-bs-theme="dark"] .navbar a:hover,
+[data-bs-theme="dark"] .navbar .active,
+[data-bs-theme="dark"] .navbar .active:focus,
+[data-bs-theme="dark"] .navbar li:hover>a {
+    color: var(--dark-warna-cta-hover);
+}
+
+[data-bs-theme="dark"] .navbar-mobile ul {
+    border: 2px solid var(--dark-bg-aksen-hover);
+}
+
+[data-bs-theme="dark"] section .container {
+    background: var(--dark-bg);
+}
+
+[data-bs-theme="dark"] .section-title h2 {
+    color: var(--dark-warna-ketiga);
+}
+
+[data-bs-theme="dark"] .about-me .content h3 {
+    color: var(--dark-warna-cta)
+}
+
+[data-bs-theme="dark"] .about-me .content ul i {
+    color: var(--dark-warna-cta-hover);
+}
+
+[data-bs-theme="dark"] .counts .count-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+[data-bs-theme="dark"] .counts .count-box i {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: var(--dark-warna-cta);
+    border-radius: 50px;
+    line-height: 0;
+}
+
+[data-bs-theme="dark"] .counts .count-box span {
     color: var(--dark-warna-pertama);
 }

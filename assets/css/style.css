@@ -65,7 +65,7 @@ h6 {
 }
 
 #header h2 span {
-  border-bottom: 2px solid #64ace6;
+  border-bottom: 2px solid var(--dark-warna-cta);
   padding-bottom: 6px;
 }
 
@@ -204,7 +204,6 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #64ace6;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -217,18 +216,10 @@ h6 {
   width: 25px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #0890e5;
-}
-
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -256,7 +247,6 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: var(--bs-body-bg);
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
@@ -278,7 +268,7 @@ h6 {
   padding: 10px 0;
   overflow-y: auto;
   transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
 .navbar-mobile li {
@@ -319,9 +309,7 @@ section.section-show {
 section .container {
   padding: 30px;
 }
-[data-bs-theme="dark"] section .container {
-  background: #191919;
-}
+
 @media (max-width: 768px) {
   section {
     top: 120px;
@@ -340,7 +328,6 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
 
@@ -349,7 +336,6 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #64ace6;
   margin: 4px 10px;
 }
 
@@ -360,7 +346,6 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -369,7 +354,6 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #64ace6;
 }
 
 .about-me .content ul {
@@ -390,7 +374,6 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #64ace6;
   line-height: 0;
 }
 
@@ -410,7 +393,6 @@ section .container {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
 }
 
 .counts .count-box i {
@@ -419,9 +401,7 @@ section .container {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #64ace6;
   border-radius: 50px;
   line-height: 0;
 }
@@ -968,8 +948,8 @@ section .container {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.contact .info-box i.bx {
-  font-size: 24px;
+.contact .info-box i.bi {
+  font-size: 20px;
   color: #64ace6;
   border-radius: 50%;
   padding: 14px;
