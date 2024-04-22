@@ -5,27 +5,19 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url('/assets/css/gelap.css');
+@import url('/assets/css/terang.css');
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-[data-bs-theme="dark"] body{
-  background: #010409;
-}
 body {
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
-
-a {
-  color: #64ace6;
+a, a:hover {
   text-decoration: none;
 }
-
-a:hover {
-  color: #4b85b4;
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -63,7 +55,6 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: var(--bs-body-color);
   line-height: 1;
   display: inline-block;
 }
@@ -71,11 +62,9 @@ h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: var(--bs-body-color-rgb);
 }
 
 #header h2 span {
-  color: var(--bs-body-color);
   border-bottom: 2px solid #64ace6;
   padding-bottom: 6px;
 }
@@ -95,17 +84,11 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--bs-body-bg);
-  color: var(--bs-body-color);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-}
-
-#header .social-links a:hover {
-  background: #64ace6;
 }
 
 @media (max-width: 992px) {
@@ -136,7 +119,6 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: var(--bs-body-bg);
 }
 
 #header.header-top .social-links,
@@ -204,7 +186,6 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: var(--bs-body-color);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -336,10 +317,11 @@ section.section-show {
 }
 
 section .container {
-  background: var(--bs-body-bg);
   padding: 30px;
 }
-
+[data-bs-theme="dark"] section .container {
+  background: #191919;
+}
 @media (max-width: 768px) {
   section {
     top: 120px;
