@@ -52,7 +52,7 @@
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('ri-menu-line')
-    this.classList.toggle('ri-close-large-fill')
+    this.classList.toggle('ri-close-line')
   })
 
   /**
@@ -78,7 +78,7 @@
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('ri-menu-line')
-        navbarToggle.classList.toggle('ri-close-large-fill')
+        navbarToggle.classList.toggle('ri-close-line')
       }
 
       if (this.hash == '#header') {
