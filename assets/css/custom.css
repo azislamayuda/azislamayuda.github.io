@@ -1,3 +1,13 @@
+:root{
+--dark-bg: #191919;
+--dark-bg-aksen: #202020;
+--dark-bg-aksen-hover: #323232;
+--dark-warna-pertama: #ffffff;
+--dark-warna-kedua: #cfd2d6;
+--dark-warna-ketiga: #989898;
+--dark-warna-cta: #0890e5;
+--dark-warna-cta-hover: #007fc4;
+}
 .kursor {
 cursor: pointer;
 text-decoration:none;

@@ -1,7 +1,7 @@
 ---
 layout: ga700
-title: Blog Archive
-description: All post
+title: GA700 Yaskawa
+description: Yaskawa seri GA700
 tags: Yaskawa
 categories: Yaskawa
 ---
