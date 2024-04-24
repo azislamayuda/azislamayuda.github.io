@@ -4,7 +4,7 @@ title: Melawan Dunia
 tags: Noah
 categories: Noah
 ---
-
+<div class="container">
 <div class="row">
   <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
     <div class="blockabout">
@@ -30,4 +30,5 @@ categories: Noah
       alt="thumb melawan dunia"
     />
   </div>
+</div>
 </div>
