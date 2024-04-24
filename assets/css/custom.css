@@ -6,7 +6,6 @@ body a:hover{opacity:.9;transition:opacity .1s;text-decoration: underline;}
 cursor: pointer;
 text-decoration:none;
 }
-
 .zisToTop{
 visibility: hidden;
 width: 40px;
