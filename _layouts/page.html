@@ -6,18 +6,15 @@ layout: default
 
   <h1>{{ page.title }}</h1>
 
-  <div class="entry">
+  <ol class="list-group list-group-numbered">
     {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-  </div>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><a href="{{ post.url }}">{{ post.title }}</a></div>
+            <span class="small">{{ post.date | date: "%b %d, %Y" }}</span>
+          </div>
+          <span class="badge text-bg-primary rounded-pill">{{ page.categories }}</span>
+        </li>
+    {% endfor %}
+  </ol>
 </article>
