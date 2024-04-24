@@ -1,0 +1,7 @@
+---
+layout: ga700
+title: Blog Archive
+description: All post
+tags: Yaskawa
+categories: Yaskawa
+---
