@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Melawan Dunia
 tags: Noah
 categories: Noah
