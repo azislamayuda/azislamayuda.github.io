@@ -1190,20 +1190,3 @@ section .container {
   opacity: 0;
   transition: all .5s;
 }
-
-.kursor {
-  cursor: pointer;
-  text-decoration:none;
-}
-
-.zisToTop.show {
-  visibility:visible;
-  bottom:60px;
-  opacity:.6;
-  background-color:var(--dark-warna-cta);
-}
-
-.zisToTop.show:hover {
-  opacity:1;
-  background-color:var(--dark-warna-cta-hover);
-}
