@@ -3,18 +3,29 @@ body a:hover{opacity:.9;transition:opacity .1s;text-decoration: underline;}
 .bd-mode-toggle {z-index: 1500;}
 .bd-mode-toggle .dropdown-menu .active .bi {display: block !important;}
 .kursor {
-    cursor: pointer;
-    text-decoration:none;
-  }
-  
-  .zisToTop.show {
-    visibility:visible;
-    bottom:60px;
-    opacity:.6;
-    background-color:var(--dark-warna-cta);
-  }
-  
-  .zisToTop.show:hover {
-    opacity:1;
-    background-color:var(--dark-warna-cta-hover);
-  }
+cursor: pointer;
+text-decoration:none;
+}
+
+.zisToTop{
+visibility: hidden;
+width: 40px;
+height: 40px;
+position: fixed;
+bottom: 150px;
+right: 10px;
+z-index: 1500;
+opacity: 0;
+transition: all .5s;
+}
+.zisToTop.show {
+visibility:visible;
+bottom:60px;
+opacity:.6;
+background-color:var(--dark-warna-cta);
+}
+
+.zisToTop.show:hover {
+opacity:1;
+background-color:var(--dark-warna-cta-hover);
+}
