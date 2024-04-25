@@ -1,4 +1,2 @@
-body a:link, body a:visited{text-decoration:none;color:currentcolor}
-body a:hover{opacity:.9;transition:opacity .1s;text-decoration: underline;}
 .bd-mode-toggle {z-index: 1500;}
 .bd-mode-toggle .dropdown-menu .active .bi {display: block !important;}

@@ -252,7 +252,3 @@
   new PureCounter();
 
 })()
-
-$(document).scroll(function() {
-  return $(this).scrollTop() > 300 ? $('.zisToTop').addClass('show') : $('.zisToTop').removeClass('show')
-  });

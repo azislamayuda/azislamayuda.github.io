@@ -1,0 +1,7 @@
+<a style='text-decoration:none' class='zisToTop kursor rounded-1 d-flex justify-content-center align-items-center' onclick='window.scrollTo({top: 0, behavior:"smooth"})'><i class="text-white ri-arrow-up-double-line ri-lg"></i></a>
+
+<script>
+$(document).scroll(function() {
+return $(this).scrollTop() > 300 ? $('.zisToTop').addClass('show') : $('.zisToTop').removeClass('show')
+});
+</script>
