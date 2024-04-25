@@ -25,7 +25,7 @@ categories: Noah
   </div>
   <div class="col-lg-6 mt-3 mb-5 mt-lg-0 text-center">
     <img
-      src="//blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjQ0gPQhd9OJmp0a5qlxY6GtHMOCZPR-7my99gmozPhgjbxKeQ8YdECSMKHZdHbsAqnA9swJNFXpoAqDpfNSOJaunWrSTmM4I-YCfSt0kktv1Hs1kn6D8MHRl8j7b0afqko44-zrJQFUY91rpMcxZu9GxfGpAcxcSKqQVBRptGCT9kj6IwHEK1SHXQ/s1600/hyc.webp"
+      src="//cdn.jsdelivr.net/gh/ceunahteuing/gambaran@main/gambaran/hyc.jpg"
       class="img-fluid border p-2"
       alt="thumb melawan dunia"
     />
