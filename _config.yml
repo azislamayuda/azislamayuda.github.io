@@ -7,6 +7,9 @@ plugins:
   - jekyll-archives
   - jekyll-paginate
 
+markdown: kramdown
+highlighter: rouge
+
 defaults:
   -
     scope:
