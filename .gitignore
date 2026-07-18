@@ -1,18 +1,3 @@
-# === Jekyll Build ===
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.bundle/
-
-# === Ruby Dependencies ===
-vendor/
-Gemfile.lock
-
-# === Node (jika dipakai nanti) ===
-node_modules/
-package-lock.json
-
 # === Environment & Secrets ===
 .env
 .env.*
