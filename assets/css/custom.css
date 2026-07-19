@@ -92,6 +92,12 @@ img {
     width: 100%;
 }
 
+.row > .col-6, .col-6 {
+    flex: 0 0 auto !important;
+    width: 50% !important;
+    max-width: 50% !important;
+}
+
 /* Medium Breakpoint (>= 768px) */
 @media (min-width: 768px) {
     .row > .col-md-4, .col-md-4 { flex: 0 0 auto !important; width: 33.33333333% !important; max-width: 33.33333333% !important; }
@@ -105,6 +111,22 @@ img {
     .row > .col-lg-4, .col-lg-4   { flex: 0 0 auto !important; width: 33.33333333% !important; max-width: 33.33333333% !important; }
     .row > .col-lg-6, .col-lg-6   { flex: 0 0 auto !important; width: 50% !important; max-width: 50% !important; }
     .row > .col-lg-12, .col-lg-12 { flex: 0 0 auto !important; width: 100% !important; max-width: 100% !important; }
+}
+
+/* Custom responsive layout for Interests section (2 items per row on mobile < 768px) */
+@media (max-width: 767.98px) {
+    .interests .row > * {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+        max-width: 50% !important;
+    }
+    .interests .row > *:nth-child(1),
+    .interests .row > *:nth-child(2) {
+        margin-top: 0 !important;
+    }
+    .interests .row > *:nth-child(n+3) {
+        margin-top: 1.5rem !important;
+    }
 }
 
 /* ==========================================================================
