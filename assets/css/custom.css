@@ -113,9 +113,11 @@ img {
     .row > .col-lg-12, .col-lg-12 { flex: 0 0 auto !important; width: 100% !important; max-width: 100% !important; }
 }
 
-/* Custom responsive layout for Interests section (2 items per row on mobile < 768px) */
+/* Custom responsive layouts for Interests & Portfolio sections (2 items per row on mobile < 768px) */
 @media (max-width: 767.98px) {
-    .interests .row > * {
+    .interests .row > *,
+    .portfolio-container > .portfolio-item,
+    .portfolio .portfolio-item {
         flex: 0 0 auto !important;
         width: 50% !important;
         max-width: 50% !important;
