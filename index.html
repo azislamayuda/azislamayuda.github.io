@@ -1069,15 +1069,7 @@
         <i class="ri-heart-2-fill ri-lg text-danger"></i>
     </div>
 
-    <a style='text-decoration:none' class='zisToTop kursor rounded-1 d-flex justify-content-center align-items-center' onclick='window.scrollTo({top: 0, behavior:"smooth"})'><i class="text-white ri-arrow-up-double-line ri-lg"></i></a>
-
-    <script>
-    document.addEventListener('scroll', function() {
-      const toTop = document.querySelector('.zisToTop');
-      if (!toTop) return;
-      window.scrollY > 300 ? toTop.classList.add('show') : toTop.classList.remove('show');
-    });
-    </script>
+    <a href="#" aria-label="Back to top" class="zisToTop kursor rounded-1 d-flex justify-content-center align-items-center"><i class="text-white ri-arrow-up-double-line ri-lg"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

@@ -113,23 +113,6 @@ img {
     .row > .col-lg-12, .col-lg-12 { flex: 0 0 auto !important; width: 100% !important; max-width: 100% !important; }
 }
 
-/* Custom responsive layouts for Interests & Portfolio sections (2 items per row on mobile < 768px) */
-@media (max-width: 767.98px) {
-    .interests .row > *,
-    .portfolio-container > .portfolio-item,
-    .portfolio .portfolio-item {
-        flex: 0 0 auto !important;
-        width: 50% !important;
-        max-width: 50% !important;
-    }
-    .interests .row > *:nth-child(1),
-    .interests .row > *:nth-child(2) {
-        margin-top: 0 !important;
-    }
-    .interests .row > *:nth-child(n+3) {
-        margin-top: 1.5rem !important;
-    }
-}
 
 /* ==========================================================================
    Flexbox & Alignment Utilities
@@ -225,6 +208,8 @@ img {
     z-index: 1500;
     opacity: 0;
     transition: all 0.5s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .zisToTop.show {
