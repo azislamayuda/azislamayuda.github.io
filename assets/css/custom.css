@@ -80,25 +80,31 @@ img {
     margin-top: var(--bs-gutter-y, 0);
 }
 
+/* Ensure columns with d-flex properly expand their inner content (e.g. icon-box, info-box) across the column */
+.row > .d-flex > * {
+    width: 100%;
+}
+
 /* Base column layout (Mobile < 768px) */
 .col-md-4, .col-md-6,
 .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-12, .col-lg {
+    flex: 0 0 auto;
     width: 100%;
 }
 
 /* Medium Breakpoint (>= 768px) */
 @media (min-width: 768px) {
-    .col-md-4 { flex: 0 0 auto; width: 33.33333333%; }
-    .col-md-6 { flex: 0 0 auto; width: 50%; }
+    .row > .col-md-4, .col-md-4 { flex: 0 0 auto !important; width: 33.33333333% !important; max-width: 33.33333333% !important; }
+    .row > .col-md-6, .col-md-6 { flex: 0 0 auto !important; width: 50% !important; max-width: 50% !important; }
 }
 
 /* Large Breakpoint (>= 992px) */
 @media (min-width: 992px) {
-    .col-lg { flex: 1 0 0%; width: auto; max-width: 100%; }
-    .col-lg-3 { flex: 0 0 auto; width: 25%; }
-    .col-lg-4 { flex: 0 0 auto; width: 33.33333333%; }
-    .col-lg-6 { flex: 0 0 auto; width: 50%; }
-    .col-lg-12 { flex: 0 0 auto; width: 100%; }
+    .row > .col-lg, .col-lg       { flex: 1 0 0% !important; width: auto !important; max-width: 100% !important; }
+    .row > .col-lg-3, .col-lg-3   { flex: 0 0 auto !important; width: 25% !important; max-width: 25% !important; }
+    .row > .col-lg-4, .col-lg-4   { flex: 0 0 auto !important; width: 33.33333333% !important; max-width: 33.33333333% !important; }
+    .row > .col-lg-6, .col-lg-6   { flex: 0 0 auto !important; width: 50% !important; max-width: 50% !important; }
+    .row > .col-lg-12, .col-lg-12 { flex: 0 0 auto !important; width: 100% !important; max-width: 100% !important; }
 }
 
 /* ==========================================================================
